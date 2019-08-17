@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
             text2.text = counter.toString()
         }
 
-        // LiveDataを観察し、このアクティビティをLifecycleOwnerおよびオブザーバーとして渡す
+        // LiveDataを監視し、このアクティビティをLifecycleOwnerおよびオブザーバーとして渡す
         viewModel.counterB.observe(this, countObserver)
     }
 }
